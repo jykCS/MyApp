@@ -5,10 +5,12 @@ public class MyApp {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Simple Calculator");
+
+
         System.out.print("Enter first number: ");
         double num1 = scanner.nextDouble();
 
-        System.out.print("Enter an operator (+, -, *, /): ");
+        System.out.print("Enter an operator (+, -, /): ");
         char operator = scanner.next().charAt(0);
 
         System.out.print("Enter second number: ");
@@ -21,9 +23,6 @@ public class MyApp {
                 break;
             case '-':
                 result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
                 break;
             case '/':
                 if (num2 != 0) {
